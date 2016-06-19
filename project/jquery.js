@@ -1,0 +1,36 @@
+$('#ansung').mouseenter(function(){
+    $('#ansung15').text("15번");
+    $('#ansung20').text("20번");
+    $('#ansung50').text("50번");
+})
+$('#ansung').mouseleave(function(){
+    $('#ansung15').text("");
+    $('#ansung20').text("");
+    $('#ansung50').text("");
+})
+$('#pyeongtaek').mouseenter(function(){
+    $('#pyeongtaek96').text("96번");
+    $('#pyeongtaek80').text("80번");
+})
+$('#pyeongtaek').mouseleave(function(){
+    $('#pyeongtaek96').text("");
+    $('#pyeongtaek80').text("");
+})
+$('#fifteen').click(function(){
+    $('#fifteen').attr('style','color:black');
+})
+$('#fifteen').dblclick(function(){
+  $('#fifteen').attr('style','color:red');  
+})
+$('#Ansung').dblclick(function(){
+    $('#Ansung').animate({fontSize:"3em"},1000);
+})
+$('#Pyeongtaek').dblclick(function(){
+    $('#Pyeongtaek').animate({fontSize:"3em"},1000);
+})
+$('#Ansung').click(function(){
+    $('#an-bus').slideToggle(3000);
+})
+$('#Pyeongtaek').click(function(){
+    $('#py-bus').slideToggle(3000);
+})
